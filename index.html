@@ -160,45 +160,18 @@
           <!-- ---------Seat view------ -->
             <div class="mt-6 space-y-6">
               <div class="flex gap-10">
-                <button class="btn font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">A1</button>
-                <button class="btn font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">A2</button>
-                <div class="flex ml-8 gap-10">
-                  <button class="btn font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">A3</button>
-                  <button class="btn font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">A4</button>
-                </div>
+                <button class="btn add-button font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">A1</button>
+                <button class="btn add-button font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">A2</button>
+                <button class="btn add-button font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">A3</button>
+                <button class="btn add-button font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">A4</button>
               </div>
               <div class="flex gap-10">
-                <button class="btn font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">B1</button>
-                <button class="btn font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">B2</button>
-                <div class="flex ml-8 gap-10">
-                  <button class="btn font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">B3</button>
-                  <button class="btn font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">B4</button>
-                </div>
+                <button class="btn add-button font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">B1</button>
+                <button class="btn add-button font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">B2</button>
+                <button class="btn add-button font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">B3</button>
+                <button class="btn add-button font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">B4</button>
               </div>
-              <div class="flex gap-10">
-                <button class="btn font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">C1</button>
-                <button class="btn font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">C2</button>
-                <div class="flex ml-8 gap-10">
-                  <button class="btn font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">C3</button>
-                  <button class="btn font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">C4</button>
-                </div>
-              </div>
-              <div class="flex gap-10">
-                <button class="btn font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">D1</button>
-                <button class="btn font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">D2</button>
-                <div class="flex ml-8 gap-10">
-                  <button class="btn font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">D3</button>
-                  <button class="btn font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">D4</button>
-                </div>
-              </div>
-              <div class="flex gap-10">
-                <button class="btn font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">E1</button>
-                <button class="btn font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">E2</button>
-                <div class="flex ml-8 gap-10">
-                  <button class="btn font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">E3</button>
-                  <button class="btn font-inter text-gray-600 px-10 py-3 bg-gray-300 w-28 rounded-md">E4</button>
-                </div>
-              </div>
+              
             </div>
           </div>
           <!-- ----Seat quantity info----- -->
@@ -206,10 +179,10 @@
               <h2 class="font-raleway font-semibold text-2xl">Select Your Seat</h2>
               <hr class="border-dashed border-gray-400 w-[600px] mt-6">
               <div class="p-12 pt-0 mt-6 bg-slate-50 rounded-3xl items-center">
-                <div class="flex gap-44">
+                <div id="selected-container" class="flex gap-44">
                   <div class="flex gap-1 mt-6">
                     <h3 class="font-inter text-base font-medium">Seat</h3>
-                    <p class="font-inter text-xs h-6 flex items-center justify-center font-bold p-2 bg-[#1DD100] text-white rounded-md">0</p>
+                    <p id="seat-count" class="font-inter text-xs h-6 flex items-center justify-center font-bold p-2 bg-[#1DD100] text-white rounded-md">0</p>
                   </div>
                   <div class="flex gap-1 mt-6">
                     <h3 class="font-inter text-base font-medium">Class</h3>
