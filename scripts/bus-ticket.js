@@ -25,3 +25,18 @@ for (const button of allButtons){
 function setInnerText(id, value){
     document.getElementById(id).innerText = value;
 }
+
+// ------------------Coupon part--------------------------
+
+const couponButton = document.getElementById('coupon-button');
+
+couponButton.addEventListener('click',function(){
+    let couponInput = document.getElementById('coupon-input').value.toLowerCase();
+
+    if(couponInput === 'NEW15' && couponInput === 'couple20'){
+        document.getElementById('coupon-input').classList.add('hidden');
+        couponButton.classList.add('hidden');
+    } else{
+        alert('Invalid Coupon');
+    }
+})
